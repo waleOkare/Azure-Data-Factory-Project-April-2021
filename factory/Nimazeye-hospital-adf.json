@@ -1,0 +1,9 @@
+{
+	"name": "Nimazeye-hospital-adf",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4a125b35-3db5-49d2-a595-f662dc4cb183",
+		"tenantId": "5e42551b-5a4b-404b-adae-6220c7a69b77"
+	}
+}

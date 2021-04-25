@@ -1,0 +1,33 @@
+{
+	"name": "pl_processed_population_data",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Population Transformation",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/nizameye/trans/transform_population_data"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_db_nizameye_cluster",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "Process"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-04-23T16:37:21Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
